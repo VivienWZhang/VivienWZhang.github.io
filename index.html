@@ -4,8 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wen Zhang | Biostatistics</title>
+  <meta name="description" content="Wen Zhang, PhD — Clinical trial biostatistician specializing in clinical trial design, Bayesian methods, and drug development.">
+  <meta name="author" content="Wen Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wen Zhang, PhD | Clinical Trial Biostatistics</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       max-width: 850px;
       margin: 60px auto;
@@ -15,88 +23,173 @@
       color: #293943;
       background: #fcfbf8;
     }
+
     header {
       padding: 35px 0;
       border-bottom: 1px solid #ddd;
     }
-    h1, h2 { color: #245466; }
-    nav { margin: 24px 0; }
+
+    h1, h2 {
+      color: #245466;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin: 24px 0;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
     nav a {
-      margin-right: 16px;
       color: #287568;
       text-decoration: none;
+      font-weight: 600;
     }
-    section { margin: 36px 0; }
-    a { color: #287568; }
+
+    nav a:hover,
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin: 36px 0;
+    }
+
+    a {
+      color: #287568;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .interests li {
+      padding: 5px 12px;
+      border-radius: 16px;
+      background: #e8f1ed;
+      font-size: 0.92rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
     footer {
+      margin-top: 50px;
       border-top: 1px solid #ddd;
       padding-top: 20px;
       color: #777;
       font-size: 14px;
     }
+
+    @media (max-width: 600px) {
+      body {
+        margin-top: 30px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        gap: 16px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Wen Zhang, PhD</h1>
+
     <p><strong>Clinical Trial Biostatistician</strong></p>
+
     <p>
-      Clinical Trial Design & Analysis · Bayesian Methods ·
-      Oncology & Obesity Research
+      Clinical Trial Design &amp; Analysis · Bayesian Methods ·
+      Oncology &amp; Obesity Research
     </p>
   </header>
 
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
+  </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="publications.html">Publications</a>
-  <a href="projects.html">Projects</a>
-</nav>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
 
+      <p>
+        I am a clinical trial biostatistician with experience
+        in clinical trial design, analysis, and execution
+        across early- and late-phase drug development.
+        My professional interests include innovative trial
+        designs, Bayesian methods, and statistical approaches
+        that support evidence-based drug development.
+      </p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a clinical trial biostatistician with experience
-      in clinical trial design, analysis, and execution
-      across early- and late-phase drug development.
-      My professional interests include innovative trial
-      designs, Bayesian methods, and statistical approaches
-      that support evidence-based drug development.
-    </p>
-  </section>
+    <section id="research">
+      <h2>Research Interests</h2>
 
-  <section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Bayesian clinical trial design</li>
-      <li>Adaptive and group sequential designs</li>
-      <li>Oncology and obesity clinical trials</li>
-      <li>Statistical methods for drug development</li>
-    </ul>
-  </section>
+      <ul class="interests">
+        <li>Bayesian Clinical Trial Design</li>
+        <li>Adaptive Trial Designs</li>
+        <li>Group Sequential Designs</li>
+        <li>Oncology &amp; Obesity Research</li>
+        <li>Statistical Methods for Drug Development</li>
+      </ul>
+    </section>
 
+    <section id="explore">
+      <h2>Explore My Work</h2>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>
-      Statistical simulations, reproducible analyses,
-      and educational resources will be featured here.
-    </p>
-  </section>
+      <p>
+        <a href="publications.html">
+          View my publications →
+        </a>
+      </p>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      <a href="https://github.com/VivienWZhang">
-        GitHub Profile
-      </a>
-      &nbsp; | &nbsp;
-      <a href="https://www.linkedin.com/">
-        LinkedIn
-      </a>
-    </p>
-  </section>
+      <p>
+        <a href="projects.html">
+          Explore my research projects →
+        </a>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <div class="contact-links">
+        <a href="https://github.com/VivienWZhang">
+          GitHub Profile
+        </a>
+
+        <!-- Replace this with your actual LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/">
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     © 2026 Wen Zhang · Personal Website
